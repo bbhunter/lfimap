@@ -1,4 +1,4 @@
-# lfimap
+# LFImap
 ## Local file inclusion discovery and exploitation tool
 
 ### Main features
@@ -10,13 +10,14 @@
 - Path truncation for arbitrary file inclusion
 - Remote file inclusion for code execution
 - Command injection for remote command execution
-- Generic time based blind sql injection testing
-- Basic reflected XSS testing
-- Support for POST argument testing
-- Support for custom http headers
-- Support for specifying cookies for authenticated requests
-- Support for specifying web proxy to send requests through
-- Support for specifying delay in between requests
+- Full control over how the requests are sent
+    - Test with arbitrary HTTP method
+    - Test with multiple specified HTTP headers
+    - Specification of custom injection point (default 'PWN') in headers or GET/form-data line
+    - Specification of delay after each request
+    - Specifying of web proxy to send requests through
+    - Option to output each request and response to a log file
+- Quick mode that uses fewer payloads to test each endpoint
 - Support for payload manipulation via url and base64 encoding(s)
 - Support for automated reverse shell access upon successful remote code execution
 
