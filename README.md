@@ -1,6 +1,9 @@
 # LFImap
 ## Local file inclusion discovery and exploitation tool
 
+This project is in pre alpha. Release 1.0 coming soon.  
+Inspired by [SQLmap](https://github.com/sqlmapproject/sqlmap)!
+
 ### Main features
 - Filter wrapper for arbitrary file inclusion
 - Data wrapper for remote command execution
